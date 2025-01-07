@@ -1,0 +1,10 @@
+linters: linters_with_defaults() # see vignette("lintr")
+
+linters: linters_with_defaults(line_length_linter = NULL, trailing_whitespace_linter = NULL) # Desactiva espacios al final
+
+linters: with_defaults(
+  line_length_linter = line_length_linter(120),
+  object_name_linter = object_name_linter(styles = "snake_case")
+)
+
+encoding: "UTF-8"
